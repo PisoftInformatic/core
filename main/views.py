@@ -39,7 +39,7 @@ mail_instance = Mail_to.objects.all()
 recipient_list = []
 for mails in mail_instance:
     recipient_list.append(mails.mail_on)
-print(recipient_list)
+
 email_config = EmailConfig.objects.first()
 terms = '"Our insurance services cover a wide range of incidents, including but not limited to accidents, natural calamities, and unforeseen circumstances, subject to the terms outlined in this policy."'
 terms2 = '"We prioritize safeguarding your privacy. Personal information collected during the insurance application process will be used solely for the purpose of providing insurance services and will not be shared without your consent, except as required by law."'

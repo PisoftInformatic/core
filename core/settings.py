@@ -137,12 +137,3 @@ SESSION_COOKIE_AGE = 300 # 5 minutes. "1209600(2 weeks)" by default
 SESSION_SAVE_EVERY_REQUEST = True # "False" by default
 
 
-# Email Sending
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_USE_TLS = True
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'dimpithakur2507@gmail.com'
-# EMAIL_HOST_PASSWORD = 'qqoloxwroukloocr'
-# EMAIL_PORT = 587
-
-
