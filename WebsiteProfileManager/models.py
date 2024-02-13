@@ -23,6 +23,15 @@ class EmailConfig(models.Model):
     email_pasword = models.CharField(max_length = 50)
     use_tls = models.CharField(max_length=50)
     def __str__(self):
-        return self.smtp_server_name or self.email_address
+        return "Enter Mail SMTP Configuration Settings (Mail that you are using to send mail)"
     class Meta:
         verbose_name_plural = "Email Configuration"
+
+class Mail_to(models.Model):
+    mail_on = models.CharField( max_length=150, help_text = "Enter Email on Which want to get user data and pdfs")
+    def __str__(self):
+        return "On this email all new data will be send."
+    class Meta:
+        verbose_name = " Mail"
+        verbose_name_plural = "Send Mail On"
+        

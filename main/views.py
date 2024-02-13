@@ -19,18 +19,9 @@ from django.shortcuts import render
 
 # Get data from the model
 profile_data = WebsiteProfileData.objects.all()
-# phone1 = profile_data.company_phone_number
-# phone2 = profile_data.company_phone_number2
-# phone3 = profile_data.company_phone_number3
-
-# # address1 = profile_data.company_address_line_1
-# # address2 = profile_data.company_address_line_2
-# # address3 = profile_data.company_address_line_3
 
 
-# company_email = profile_data.company_email_id
-# company_zip_code = profile_data.zip_code
-
+# these are used for PDFs
 company_address = [ 'DTS Insurance Services Inc.',
                    '3380 W Ashlan Ave',
                    'FRESNO, CA',
@@ -38,14 +29,17 @@ company_address = [ 'DTS Insurance Services Inc.',
                    'Phone : 559-554-9835',
                    'Email : damandeep@dtsinsservices.com',
                 ]
-
 # Path Of the Logo of Pdf File -->
 logo_path = 'E:/Kuldeep(Python)/Development/INsurance/core/static/img/logo1.png'
 #logo_path = '/root/pypro/core/static/img/logo1.png'
 
-# recipient_list = ['kuldeepsaini8865py@gmail.com', 'damandeep@dtsinsservices.com', 'Anjupisoft@gmail.com']
-recipient_list = ['kuldeepsaini8865py@gmail.com','coolboyk.deepsaini@gmail.com']
 
+# recipient_list = ['kuldeepsaini8865py@gmail.com','coolboyk.deepsaini@gmail.com']
+mail_instance = Mail_to.objects.all()
+recipient_list = []
+for mails in mail_instance:
+    recipient_list.append(mails.mail_on)
+print(recipient_list)
 email_config = EmailConfig.objects.first()
 terms = '"Our insurance services cover a wide range of incidents, including but not limited to accidents, natural calamities, and unforeseen circumstances, subject to the terms outlined in this policy."'
 terms2 = '"We prioritize safeguarding your privacy. Personal information collected during the insurance application process will be used solely for the purpose of providing insurance services and will not be shared without your consent, except as required by law."'

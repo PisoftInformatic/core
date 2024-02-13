@@ -13,3 +13,7 @@ class Email_Config_Data(admin.ModelAdmin):
 admin.site.register(EmailConfig, Email_Config_Data)
 
 
+
+class Mail_to_Data(admin.ModelAdmin):
+    list_display = ('mail_on', 'mail_on')
+admin.site.register(Mail_to, Mail_to_Data)
