@@ -32,6 +32,6 @@ class Mail_to(models.Model):
     def __str__(self):
         return "On this email all new data will be send."
     class Meta:
-        verbose_name = " Mail"
+        verbose_name = "Mail"
         verbose_name_plural = "Send Mail On"
         
