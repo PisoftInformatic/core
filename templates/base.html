@@ -59,7 +59,7 @@
         <div class="container px-0 cont-nav " >
             <nav class="navbar navbar-expand-lg bg-white navbar-dark ">
                 <a href="/" class="navbar-brand" >
-                    <img src="{% static 'img/logoa.png'%}" class="img-fluid logo " width="130px" alt="DTS insurance Services">
+                    <img src="{% static 'img/dts_logo.jpg'%}" class="img-fluid logo " width="90px" alt="DTS insurance Services">
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -76,6 +76,9 @@
                                 <a href="{% url 'non-commercial-auto-form' %}" class="dropdown-item">NON COMMERCIAL AUTO INSURANCE</a>
                                 <a href="{% url 'home-insurance-form' %}" class="dropdown-item">HOME INSURANCE</a>
                                 <a href="{% url 'life-insurance-form' %}" class="dropdown-item">LIFE INSURANCE</a>
+                                <a href="{% url 'fzf' %}" class="dropdown-item">DISPATCH</a>
+                                <a href="{% url 'fzf1' %}" class="dropdown-item">NOTARY SERVICES</a>
+                                <a href="{% url 'pay-bill' %}" class="dropdown-item">PAY BILL</a>
                             </div>
                         </div>
 
@@ -104,6 +107,7 @@
             <div class="col-lg-4 col-md-6 footer">
                 <h4 class="text-white mb-2">GET IN TOUCH</h4>
                 <p class="info-footer"><i class="fa fa-map-marker-alt mr-2 mb-0  "></i>{{ company_info.company_address }}</p>
+                <p class="info-footer">{{ company_info.company_address2 }}</p>
                 <p class=" px-2">{{company_info.zip_code}}</p>
 
                 <p class="info-footer"><i class="fa fa-phone-alt mr-2 "></i>{{ company_info.company_phone_number }}</p>

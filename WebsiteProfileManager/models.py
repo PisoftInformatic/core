@@ -10,6 +10,8 @@ class WebsiteProfileData(models.Model):
     company_phone_number3 = models.CharField(max_length = 50)
     company_email_id = models.CharField(max_length=50)
     company_address = models.CharField(max_length = 100)
+    company_address2 = models.CharField(max_length = 100)
+
     def __str__(self):
         return self.company_phone_number or self.company_email_id or self.company_address
     class Meta:

@@ -46,8 +46,13 @@ terms2 = '"We prioritize safeguarding your privacy. Personal information collect
 terms3 = '" By availing of our insurance services, you acknowledge and agree that accurate and truthful information provided in the application process is crucial for policy validity and claim processing. "'
 terms4 = '" The insurance provider reserves the right to modify policy terms and conditions with proper notice. Modifications may be made to comply with regulations or enhance policy offerings."'
 
-# def fzf(requests):
-#     return render(requests, '500.html')
+def fzf(requests):
+    return render(requests, '404.html')
+def fzf1(requests):
+    return render(requests, '404.html')
+
+def pay_bill(requests):
+    return render(requests, 'pay-bill.html')
 
 def home(requests):
     return render(requests, 'index.html')
