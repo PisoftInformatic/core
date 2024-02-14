@@ -130,6 +130,9 @@ margin: 12px; */
     .about-para{
         text-align: left !important;
     }
+    .error-img{
+        width: 100vw !important;
+    }
 
 }
 
@@ -143,10 +146,6 @@ margin: 12px; */
     /* background-color: rgb(145, 145, 218) !important; */
 }
 
-
-/* h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
-    color: #050c54 !important;
-  } */
 
 h1{
     font-size: 35px !important;

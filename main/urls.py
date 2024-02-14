@@ -23,5 +23,8 @@ urlpatterns = [
     path('non-commercial-auto-form', NC_Auto_form, name='non-commercial-auto-form'),
     path('home-insurance-form', home_insurance_form, name='home-insurance-form'),
     path('life-insurance-form', life_insurance_form, name='life-insurance-form'),
+
+
+    # path('404', fzf, name = "fzf"),
    
 ]
