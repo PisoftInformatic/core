@@ -245,6 +245,11 @@ Commercial Auto Insurance | DTS Insurance Services
             document.getElementById('lname-error').textContent = "Last Name is required";
             return false;
         }
+         // Validate if Last Name contains symbols
+         if (!/^[A-Za-z]+(?: [A-Za-z]+)*$/.test(lname.trim())) {
+            document.getElementById('lname-error').textContent = "Last Name should contain only alphabets";
+            return false;
+        }
         if (dob.trim() === "") {
             document.getElementById('dob-error').textContent = "Date Of Birth is Required";
             return false;
