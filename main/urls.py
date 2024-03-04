@@ -25,8 +25,8 @@ urlpatterns = [
     path('life-insurance-form', life_insurance_form, name='life-insurance-form'),
 
 
-    path('pending', fzf, name = "fzf"),
-    path('pending1', fzf1, name = "fzf1"),
+    # path('pending', fzf, name = "fzf"),
+    # path('pending1', fzf1, name = "fzf1"),
     path('pay-bill', pay_bill, name = "pay-bill"),
    
 ]

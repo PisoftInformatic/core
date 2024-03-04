@@ -30,11 +30,11 @@ company_address = [ 'DTS Insurance Services Inc.',
                    'Email : damandeep@dtsinsservices.com',
                 ]
 # Path Of the Logo of Pdf File -->
-logo_path = 'E:/Kuldeep(Python)/Development/INsurance/core/static/img/logo1.png'
-#logo_path = '/root/pypro/core/static/img/logo1.png'
+# logo_path = 'E:/Kuldeep(Python)/Development/INsurance/core/static/img/logo1.png'
+logo_path = '/root/website/core/static/img/logo1.png'
 
 
-# recipient_list = ['kuldeepsaini8865py@gmail.com','coolboyk.deepsaini@gmail.com']
+# recipient_list = []
 mail_instance = Mail_to.objects.all()
 recipient_list = []
 for mails in mail_instance:
@@ -46,10 +46,10 @@ terms2 = '"We prioritize safeguarding your privacy. Personal information collect
 terms3 = '" By availing of our insurance services, you acknowledge and agree that accurate and truthful information provided in the application process is crucial for policy validity and claim processing. "'
 terms4 = '" The insurance provider reserves the right to modify policy terms and conditions with proper notice. Modifications may be made to comply with regulations or enhance policy offerings."'
 
-def fzf(requests):
-    return render(requests, '404.html')
-def fzf1(requests):
-    return render(requests, '404.html')
+# def fzf(requests):
+#     return render(requests, '404.html')
+# def fzf1(requests):
+#     return render(requests, '404.html')
 
 def pay_bill(requests):
     return render(requests, 'pay-bill.html')
