@@ -1,6 +1,6 @@
 from django.db import models
 
-# # Create your models here.
+#Create your models here.
 
 
 
@@ -18,7 +18,7 @@ class WebsiteProfileData(models.Model):
         verbose_name_plural = "Website Profile Data"
 
 class EmailConfig(models.Model):
-    smtp_backend = models.CharField(max_length = 150, default='django.core.mail.backends.smtp.EmailBackend')
+    smtp_backend = models.CharField(max_length = 150, default='django.core.mail.backends.smtp.EmailBackend', editable = False)
     smtp_server_name = models.CharField(max_length = 50)
     smtp_server_port = models.CharField(max_length = 30)
     email_address = models.CharField(max_length = 150)
